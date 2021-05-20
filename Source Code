@@ -1,0 +1,18 @@
+# Guess-the-number-game
+code for youtube video
+import random 
+
+max_num = 10
+
+random_num = random.randint(1, max_num)
+
+guess = 0 
+
+while guess != random_num:
+	guess = int(input("Enter a guess num: "))
+	if guess > random_num:
+		print("Wrong! too high ")
+	elif guess < random_num:
+		print("Wrong! too low")
+	else:
+		print(f"that is correct tha num was{random_num}")
